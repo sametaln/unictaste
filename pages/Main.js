@@ -27,7 +27,6 @@ const Main = () => {
 
     const { error } = await res.json();
     if (error) return;
-    console.log(res.body);
   };
 
   return (
