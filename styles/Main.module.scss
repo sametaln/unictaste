@@ -194,6 +194,11 @@
 
   &:hover {
     border-radius: 20px;
+    color: #cb4085;
+  }
+
+  &:active {
+    transform: translateY(2px);
   }
 }
 
