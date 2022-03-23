@@ -73,7 +73,7 @@ const Main = () => {
               neque mollis.
             </p>
             <div className={styles.linkRoute}>
-              <Link href="/">
+              <Link href="/app">
                 <a className={styles.link}>
                   Go to App
                   <ArrowRightIcon
