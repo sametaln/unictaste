@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from '../styles/Main.module.scss';
 import ArrowForwardSharpIcon from '@mui/icons-material/ArrowForwardSharp';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
@@ -13,9 +14,11 @@ const Main = () => {
     <div>
       <div className={styles.topbar} id="topbar">
         <span className={styles.logo}>
-          <a className={styles.logoLink} href="/">
-            Unic<span className={styles.topbarTaste}>taste</span>
-          </a>
+          <Link href="/">
+            <a className={styles.logoLink}>
+              Unic<span className={styles.topbarTaste}>taste</span>
+            </a>
+          </Link>
         </span>
         <nav className={styles.nav}>
           <a href="#usage" className={styles.linkNav}>
@@ -70,18 +73,20 @@ const Main = () => {
               neque mollis.
             </p>
             <div className={styles.linkRoute}>
-              <a href="/" className={styles.link}>
-                Go to App
-                <ArrowRightIcon
-                  className={styles.arrow}
-                  sx={{
-                    fontSize: '4rem',
-                    height: '2rem',
-                    width: '2rem',
-                    color: '#CB4085',
-                  }}
-                />
-              </a>
+              <Link href="/">
+                <a className={styles.link}>
+                  Go to App
+                  <ArrowRightIcon
+                    className={styles.arrow}
+                    sx={{
+                      fontSize: '4rem',
+                      height: '2rem',
+                      width: '2rem',
+                      color: '#CB4085',
+                    }}
+                  />
+                </a>
+              </Link>
             </div>
           </div>
         </main>
