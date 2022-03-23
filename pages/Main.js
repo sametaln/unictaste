@@ -11,7 +11,7 @@ const Main = () => {
   };
 
   return (
-    <div>
+    <div className={styles.all}>
       <div className={styles.topbar} id="topbar">
         <span className={styles.logo}>
           <Link href="/">
@@ -24,11 +24,11 @@ const Main = () => {
           <a href="#usage" className={styles.linkNav}>
             Usage
           </a>
-          <a href="#contact" className={styles.linkNav}>
-            Contact Us
-          </a>
           <a href="/app" className={styles.linkNav}>
             App
+          </a>
+          <a href="#contact" className={styles.linkNav}>
+            Contact Us
           </a>
         </nav>
       </div>
