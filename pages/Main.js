@@ -3,11 +3,31 @@ import Link from 'next/link';
 import styles from '../styles/Main.module.scss';
 import ArrowForwardSharpIcon from '@mui/icons-material/ArrowForwardSharp';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
-import { Button } from '@mui/material';
+import { useState } from 'react';
 
 const Main = () => {
-  const handleClick = (e) => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [text, setText] = useState('');
+
+  const handleClick = async (e) => {
     e.preventDefault();
+
+    const res = await fetch('/api/sendgrid', {
+      body: JSON.stringify({
+        email: email,
+        name: name,
+        text: text,
+      }),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      method: 'POST',
+    });
+
+    const { error } = await res.json();
+    if (error) return;
+    console.log(res.body);
   };
 
   return (
@@ -32,6 +52,7 @@ const Main = () => {
           </a>
         </nav>
       </div>
+      {/* HOME */}
       <section className={styles.container}>
         <main className={styles.home}>
           <div className={styles.left}>
@@ -61,6 +82,7 @@ const Main = () => {
           </div>
         </main>
       </section>
+      {/* USAGE */}
       <section className={styles.container}>
         <main className={styles.usage} id="usage">
           <div className={styles.top}>
@@ -96,33 +118,36 @@ const Main = () => {
           </div>
         </main>
       </section>
+      {/* CONTACT */}
       <section className={styles.contactContainer}>
         <main className={styles.contact} id="contact">
           <div className={styles.top}>
             <h1 className={styles.contactText}>Contact Us</h1>
           </div>
           <div className={styles.bottom}>
-            <form className={styles.leftContact}>
+            <form className={styles.leftContact} onSubmit={handleClick}>
               <input
                 type="text"
                 placeholder="Your Name"
                 className={styles.inputSmall}
+                onChange={(e) => setName(e.target.value)}
+                required
               />
               <input
                 type="text"
                 placeholder="Your Email Adress"
                 className={styles.inputSmall}
+                onChange={(e) => setEmail(e.target.value)}
+                required
               />
               <textarea
                 name="text"
                 placeholder="What is in your mind?"
                 className={styles.inputBig}
+                onChange={(e) => setText(e.target.value)}
+                required
               />
-              <button
-                type="submit"
-                onClick={handleClick}
-                className={styles.submit}
-              >
+              <button type="submit" value="submit" className={styles.submit}>
                 Send
               </button>
             </form>
