@@ -1,0 +1,47 @@
+.container {
+  width: 70%;
+  margin: 10rem auto;
+  position: relative;
+}
+
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem;
+  flex-direction: row;
+}
+
+.left {
+  flex: 1.7;
+  margin-right: 15rem;
+}
+
+.text {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.link {
+  font-size: 1.6rem;
+  font-weight: 300;
+  text-decoration: underline;
+  text-align: center;
+  display: flex;
+  transition: all 0.2s;
+  &:hover {
+    color: #cb4085;
+  }
+}
+
+.right {
+  flex: 2;
+}
+
+.foot {
+  width: 100vw;
+
+  position: absolute;
+  bottom: 0;
+  height: 5rem;
+}

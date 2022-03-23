@@ -1,0 +1,38 @@
+.topbar {
+  width: 75vw;
+  height: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2rem auto;
+  text-align: center;
+  align-items: center;
+}
+
+.logo {
+  font-size: 4.5rem;
+  font-weight: regular;
+  cursor: pointer;
+}
+
+.topbarTaste {
+  color: #cb4085;
+}
+
+.nav {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+}
+
+.link {
+  font-size: 1.75rem;
+  font-weight: regular;
+  text-transform: uppercase;
+  margin-right: 1rem;
+  transition: all 0.2s;
+
+  &:hover {
+    color: #cb4085;
+  }
+}
