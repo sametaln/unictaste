@@ -105,13 +105,17 @@
 .contactContainer {
   display: flex;
   justify-content: center;
-  margin-top: 4rem;
+  background-color: #cb4085;
+  width: 75vw;
+  height: 80vh;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  border-radius: 20px;
 }
 
 .contact {
-  width: 85vw;
-  height: 80vh;
-  background-color: #cb4085;
+  width: 85%;
+  height: 80%;
   border-radius: 25px;
   margin: 4rem auto;
   display: flex;
@@ -268,8 +272,24 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 110%;
     height: 100%;
+    margin: 0 auto;
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .leftImg {
+    flex: 3;
+  }
+
+  .rightText {
+    flex: 1;
   }
 
   .h1 {
@@ -281,6 +301,9 @@
     width: 100%;
     height: 100%;
     padding: 0;
+    border-radius: 0;
+    margin: 0;
+    margin-top: 15rem;
   }
 
   .contactText {
@@ -297,14 +320,14 @@
     width: 100vw;
     border-radius: 0;
     height: 100%;
-    margin: 0;
+    margin: 0 2rem;
   }
 
   .leftContact {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0;
+    margin: 0 1.5rem 0 0;
     margin-bottom: 0.3rem;
   }
 
