@@ -2,6 +2,8 @@ import sendgrid from '@sendgrid/mail';
 
 sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
 
+require('dotenv').config();
+
 async function sendEmail(req, res) {
   try {
     await sendgrid.send({
