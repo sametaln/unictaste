@@ -17,7 +17,7 @@ async function sendEmail(req, res) {
       </div>`,
     });
   } catch (err) {
-    return res.status(err.statusCode || 500).json({ error: error.message });
+    return res.status(err.statusCode || 500).json({ error: err.message });
   }
 
   return res.status(200).json({ error: '' });
