@@ -43,7 +43,7 @@ const Main = () => {
           <a href="#usage" className={styles.linkNav}>
             Usage
           </a>
-          <a href="/app" className={styles.linkNav}>
+          <a href="https://app-unictaste.vercel.app" className={styles.linkNav}>
             App
           </a>
           <a href="#contact" className={styles.linkNav}>
@@ -98,7 +98,7 @@ const Main = () => {
                 neque mollis.
               </p>
               <div className={styles.linkRoute}>
-                <Link href="/app">
+                <Link href="https://app-unictaste.vercel.app">
                   <a className={styles.link}>
                     Go to App
                     <ArrowRightIcon
