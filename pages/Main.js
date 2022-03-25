@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import Head from 'next/head';
 import styles from '../styles/Main.module.scss';
 import ArrowForwardSharpIcon from '@mui/icons-material/ArrowForwardSharp';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
@@ -31,6 +32,10 @@ const Main = () => {
 
   return (
     <div className={styles.all}>
+      <Head>
+        <title>Unictaste</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <div className={styles.topbar} id="topbar">
         <span className={styles.logo}>
           <Link href="/">
