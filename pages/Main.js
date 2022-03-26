@@ -61,9 +61,8 @@ const Main = () => {
         <main className={styles.home}>
           <div className={styles.left}>
             <p className={styles.text}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Pellentesque sagittis mauris non ex gravida, sit amet vehicula
-              neque mollis.
+              Unictaste is a project under development aiming to bring people
+              with a similar kind of music taste together.
             </p>
             <div className={styles.linkRoute}>
               <a href="#usage" className={styles.link}>
@@ -98,9 +97,10 @@ const Main = () => {
             </div>
             <div className={styles.rightText}>
               <p className={styles.text}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Pellentesque sagittis mauris non ex gravida, sit amet vehicula
-                neque mollis.
+                The current scheme is that you will be able to see what people
+                around your proximity are listening to. If both you and the
+                other person wants to meet, you are allowed to chat trough
+                in-app texting interface.
               </p>
               <div className={styles.linkRoute}>
                 <Link href="https://app-unictaste.vercel.app">
