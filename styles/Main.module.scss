@@ -258,7 +258,7 @@
   }
 
   .text {
-    font-size: 1.7rem;
+    font-size: 1rem;
   }
 
   .link {
@@ -295,6 +295,8 @@
 
   .rightText {
     flex: 1;
+    margin-left: 2rem;
+    font-size: 1.2rem;
   }
 
   .h1 {
@@ -325,7 +327,7 @@
     width: 100vw;
     border-radius: 0;
     height: 100%;
-    margin: 0 2rem;
+    margin: 0 1rem;
   }
 
   .leftContact {
