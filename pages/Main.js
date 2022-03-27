@@ -97,10 +97,9 @@ const Main = () => {
             </div>
             <div className={styles.rightText}>
               <p className={styles.text}>
-                The current scheme is that you will be able to see what people
-                around your proximity are listening to. If both you and the
-                other person wants to meet, you are allowed to chat trough
-                in-app texting interface.
+                You will be able to see what people around your proximity are
+                listening to. If both you and the other person wants to meet,
+                you are allowed to chat trough in-app texting interface.
               </p>
               <div className={styles.linkRoute}>
                 <Link href="https://app-unictaste.vercel.app">
