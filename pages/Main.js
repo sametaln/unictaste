@@ -145,7 +145,7 @@ const Main = () => {
               />
               <textarea
                 name="text"
-                placeholder="What is in your mind?"
+                placeholder="What is on your mind?"
                 className={styles.inputBig}
                 onChange={(e) => setText(e.target.value)}
                 required
